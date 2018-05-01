@@ -1,0 +1,160 @@
+/*Imports Font Family*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+	/*RGBA has transparency*/
+		background-color:rgba(0,0,255,0.25);
+	/*HEX code has solid color*/
+		background-color: #00ff00;
+
+	/*Some colors have words*/
+	background-color: lightblue;
+
+	/*Background image*/
+	/*Using ../img/ goes up a folder level*/
+	background-image: url(../img/back.png);
+
+	/*Set Background Repeat*/
+	background-repeat: repeat-y;
+	background-repeat: repeat-x;
+	background-repeat: no-repeat;
+
+	background-image: url(../img/image.jpg);
+
+	/*background size property*/
+	background-size: 600px;
+	backbround-size: cover;
+
+	/*background Position Property*/
+	background-position: bottom right;
+	background-position: top right;
+	background-position: center;
+
+	/*Background Scroll*/
+	background-attachment: fixed;
+}
+
+h3{	
+	color: #880088;
+}
+
+h1{
+	/*Custom Font from Google Fonts*/
+	font-family: 'Roboto', cursive;
+}
+
+h2{
+	background-color: white;
+	/*Can use "Display: inline, or Display: Block to display and manipulate
+	content vertically or horizontally*/
+	display: block;
+}
+
+strong{
+	background-color: blue;
+}
+
+p{
+		/*Text Color '#ffffff' is all white in hex-code*/
+		color: #ffffff;
+		/*Font size*/
+		font-size: 24px;
+
+		/*Text Shadow ... 1st: X-Factor, 2nd: Y-Factor, 3rd: Blur Color; */
+		text-shadow: 0px 4px 6px  #000;
+
+		/*Line height*/
+		line-height: 40px;
+		/*Can double/triple/whatev the line height of the font size*/
+		line-height: 2em;
+
+		/*Test-alignment*/
+		text-align: right;
+		text-align: center;
+		text-align: left;
+
+		/*Display Properties*/
+		display: inline;
+		display: none;
+		display: block;
+
+		/*Opacity ... kind of like transparency*/
+		opacity: .95;
+
+
+}
+
+/* the character "." means and refers to a "class" aka. classificaton 
+of tags/code*/
+
+.intro{
+		background: black;
+		/*Padding - Innermost Layer*/
+		padding: 12px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+
+		/*Shortcut: All 4 Directions*/
+		padding: : 10px;
+
+		/*Shortcut Top-Bottom, Left Right*/
+		padding: : 10px 20px;
+
+		/*Shortcut: All 4 Sides (Clockwise from Top, right, bottom , left)*/
+		padding: : 10px 30px 40px 20px;
+
+		/*Border Properties - Lots of options see W3 Schools */
+		border: solid 2px red;
+		border-top: solid 10px green;
+		border-left: dashed 5px blue;
+		border-right: groove 10px yellow;
+
+		/*Corner Radius*/
+		border-radius: 20px;
+		border-bottom-right-radius: 50px;
+
+		/*Margin - Can use Top, Left, Bottom, Right*/
+		margin: 12px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+
+		/*Shortcut: All 4 Directions*/
+		margin: 10px;
+
+		/*Shortcut Top-Bottom, Left Right*/
+		margin: 10px 20px;
+
+		/*Shortcut: All 4 Sides (Clockwise from Top, right, bottom , left)*/
+		margin: 10px 30px 40px 20px;
+
+
+
+
+}
+
+.intro-text{
+		font-size: 40px;
+}
+
+.big-letter{
+		font-size: 90px;
+		color:red;
+}
+
+/* # means ID, an ID is more specific than a class - Look up Class vs ID
+again on W3 code*/
+#fade{
+		opacity: .5;
+}
+
+.container{
+	width: 100%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 100px;
+
+	/*Limits the width*/
+	max-width: 900px;
+}

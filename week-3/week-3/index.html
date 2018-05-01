@@ -1,0 +1,96 @@
+<!-- Defines the HTML Version to the Browser -->
+<!DOCTYPE html>
+<html>
+	<!-- The 'Head' section tells the browser about & search engine details about the web site, content, search terms, etc. that show up as the name of the website in search results and the corresponding description of the website -->
+	<head>
+		<!-- The 'title' is what shows up in the tab of web browsers as well as the blue link in search engine results -->
+		<title> Who is Nick Vail? </title>
+		<meta name="Nick Vail" content="Nick Vail is a Raleigh native and 'Older Millennial', whose goal is explore and experience all that this life has to offer.">
+		<meta charset="UTF-8">
+
+		
+		<!-- Favicons for browser tabs and sharing preview -->
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Open Graph: Facebook Share image -->
+		<meta property="og:image" content="http://scribble.studio/techtalentsouth/18spring/nick-vail/week-3/images/pepperdog.jpg" />
+
+		<!-- This is called External CSS.  It is best for more than 1 page websites.  It basically allows you to create temples and reference different style & formatting properties that can be used throughout the website and associated with different pieces of content within the html file  -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+	
+	</head>
+
+	<!-- The Body marks the beginning of the content that displays on the website.  It basically descripes the layout as well as containing text and can reference outside information such as css styles, images, links, API's, other media, and eventually likely dynamic items like databases, javascript items, security protocols, etc. Everything inside the 'body' element will be shown in the main browser window -->
+	<body> 
+		<!-- Headers are usually used as a 'masthead' to group items that would be considered part of the header section of a site.  Note the <h1> element is a subheading or section that shoud only be used once, as it is often referenced by search engines for optimization purposes and to identify keywords-->
+		<header>
+			<!-- Primary Header, Referenced for SEO Tags, Largest Font Size -->
+			<h1><strong>All About this Guy: Nick Vail</strong></h1>
+			<!-- 'img' references an image file and its 'src' attribute identifies the file location -->
+			<img src="images/tahoehiking.jpg" width="50%">
+			
+		</header>
+		<main>
+		<!-- Slightly Smaller 'Sub Heading' Font than 'h1' Usually used to designate major sections of webpage -->
+		<h2>Some Things I Like to Do:</h2>
+		<!-- The paragraph tag -->
+		<p>There are so many things to list, but for the sake of practice, I'm going to put them in an <em>unordered list</em>, and then try to post some photos</p>
+		<!-- Unordered Lists use bullet points for list items.  Lists can also be nested to have sub lists under each list item-->
+		<ul>
+			<li>Travel (Anywhere and Everywhere)</li>
+			<li>Outdoor Sports and Activities</li>
+				<ul>
+					<li>Skiing</li>
+					<li>Hiking</li>
+					<li>Kiteboarding</li>
+				</ul>
+			<li>History and Culture</li>
+			<li>Learning New Skills (like Coding!)</li>
+			<li>Entrepreneurship and Small Business</li>
+		</ul>
+
+		<!-- Images should be well formatted & optimized for the web before being put into a common images folder for the site.  They are included on the website with the 'img src= command and can be manipulated with many properties such as 'width', 'height', 'alighment, 'transparency', etc. -->
+		<img src="images/diving.jpg" width=25%>
+		<img src="images/yosemitehiking.jpg" width=25%>
+		<img src="images/kiteboarding.jpg" width=25%>
+
+		<h2>I am a Dog Person: Who isn't?</h2>
+		<p>Here are some of the family <strong>dogs</strong> ... in a slick <em>ordered list</em> ... oh yeah!</p>
+		<!-- Ordered Lists will create numbered lists that are indented.  Ordered Lists can also have sub lists. -->
+		<ol>
+			<li>Molly Dog (Australian Shepherd)</li>
+			<li>Miller Dog (Boxer)</li>
+			<li>Pepper Dog (Cairn Terrier)</li>
+		</ol>
+
+		<img src="images/millerdog.jpg" width=25%>
+		<img src="images/mollydog.jpg" width=25%>
+		<img src="images/pepperdog.jpg" width=25%>
+		<!-- The 'footer' indiates an area outside the primary content of the page that can be used across the site to designate links, contact info, copyright details, and other aspects that might show up on every page  -->
+		</main>
+		<footer>
+			<h4>Learn more about me on LinkedIn:</h4>
+			<!-- Links can be created with the '<a href=' tag.  They are used to reference external websites, other pages on your website, places on the same page, etc..  The title text of the link will follow the linked URL-->
+			<a href="https://www.linkedin.com/in/nvail/"> Nicks LinkedIn Profile </a>
+
+			<center><p>&copy; 2018 NickVail Studios</p>
+			<p>&copy; H<sub>2</sub>0 Productions </p></center>
+			<!-- Allows for Indented quotes to show on the website -->
+			<blockquote>
+				<!-- The 'center' tag will center the paragraph or text on the site, it is dynamic. The'em' tag stands for emphasis, and is a 'semantic' tag that will usually render as italics on the site -->
+				<center><em> "They've done studies you know. Sixty percent of the time, it works every time." -Brian Fantana </em></center>
+			</blockquote>
+	</body>
+</html>
+
+			
+
+
