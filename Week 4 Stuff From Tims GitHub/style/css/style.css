@@ -1,0 +1,51 @@
+<<<<<<< HEAD
+/* line 3, /Users/ngvail/Documents/GitHub/tts-tim/style/sass/style.scss */
+body {
+  background: lightblue;
+}
+
+/* line 7, /Users/ngvail/Documents/GitHub/tts-tim/style/sass/style.scss */
+p {
+  color: darkblue;
+}
+
+/* line 11, /Users/ngvail/Documents/GitHub/tts-tim/style/sass/style.scss */
+h2 {
+  font-size: 36px;
+  text-align: left;
+  opacity: .80;
+}
+
+/* line 17, /Users/ngvail/Documents/GitHub/tts-tim/style/sass/style.scss */
+h1 {
+  color: #fbfdfe;
+}
+
+/* line 22, /Users/ngvail/Documents/GitHub/tts-tim/style/sass/style.scss */
+main h1 {
+  color: white;
+=======
+/* line 4, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+body {
+  background: orange;
+}
+
+/* line 7, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+h1 {
+  color: #ffc966;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+/* line 11, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+p {
+  color: #996300;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+/* line 17, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+main h1 {
+  color: #996300;
+>>>>>>> f046e358d57f36a4939a4a04e30676513cf37e68
+}
+
+/*# sourceMappingURL=../css/style.map */
