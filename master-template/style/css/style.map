@@ -5,8 +5,8 @@
 		"../sass/style.scss"
 	],
 	"sourcesContent": [
-		"body{\n  background: blue;\n}\n"
+		"\n// Old way of building SASS containers\n.container{\n  border: solid 1px black;\n}\n\n.container-fluid{\n  border: solid 5px red;\n}\n\n// SASS optimized and  dynamic example (Allows you to write it once vs two separate times.\n//the goal in code is to only write things once if possible)\n.border{\n  border: solid 3px black;\n}\n\n.container{\n  @extend .border;\n  &-fluid{\n    @extend .border;\n    border-color: red;\n  }\n}\n\n// Identifies the individual columns with which to extend the border\n.col-6 {\n  @extend .border;\n}\n\n//Adding the \"^\" operator Applies the border to anything that starts with the following terms\n  [class^=\"col\"]{\n    @extend .border;\n  }\n"
 	],
-	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACF,UAAU,EAAE,IAAK;CAClB",
+	"mappings": ";AAEA,AAAA,UAAU,CAAA;EACR,MAAM,EAAE,eAAgB;CACzB;;;AAED,AAAA,gBAAgB,CAAA;EACd,MAAM,EAAE,aAAc;CACvB;;;AAID,AAAA,OAAO,EAIP,AAJA,UAIU,EAAV,AAJA,gBAIU,EASV,AAbA,MAaM,GAKJ,AAAA,AAlBF,KAkBG,EAAO,KAAK,AAAZ,EAlBI;EACL,MAAM,EAAE,eAAgB;CACzB;;;AAED,AAAA,gBAAU,CAED;EAEL,YAAY,EAAE,GAAI;CACnB",
 	"names": []
 }

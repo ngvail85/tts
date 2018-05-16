@@ -1,3 +1,33 @@
-body{
-  background: blue;
+
+// Old way of building SASS containers
+.container{
+  border: solid 1px black;
 }
+
+.container-fluid{
+  border: solid 5px red;
+}
+
+// SASS optimized and  dynamic example (Allows you to write it once vs two separate times.
+//the goal in code is to only write things once if possible)
+.border{
+  border: solid 3px black;
+}
+
+.container{
+  @extend .border;
+  &-fluid{
+    @extend .border;
+    border-color: red;
+  }
+}
+
+// Identifies the individual columns with which to extend the border
+.col-6 {
+  @extend .border;
+}
+
+//Adding the "^" operator Applies the border to anything that starts with the following terms
+  [class^="col"]{
+    @extend .border;
+  }
