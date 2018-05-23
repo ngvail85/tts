@@ -9,7 +9,7 @@
 }
 
 /* line 13, /Users/ngvail/Documents/GitHub/tts/master-template/style/sass/style.scss */
-.border, .container, .container-fluid, .col-6, [class^="col"] {
+.border, .container, .container-fluid, .col-6, [class^="col-"] {
   border: solid 3px black;
 }
 

@@ -1,0 +1,148 @@
+body {
+  background: darkgreen;
+}
+
+.timeline{
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.sky{
+  height: 600px;
+  width: 100%;
+  background-color: skyblue;
+  padding-top: calc(300px - 25px);
+  //Overflow hides elements that flow outside of the sky
+  overflow: hidden;
+  animation-name: skylight;
+  @extend .timeline;
+}
+
+.sun{
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: sunset;
+  @extend .timeline;
+}
+
+  @-webkit-keyframes sunset {
+  //Sunrise
+  //The 'vw' stands for view width, and refers to the percentage of the screen
+  //to travel across.  This is good when dealing with mobile responsive units.
+  0% {
+      background-color: white;
+      transform:
+        translate(-50vw, 300px)
+        scale(3,3);
+  }
+  //Noon
+  25% {
+    background-color: pink;
+  }
+  //Noon
+  40% {
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+  }
+  50% {
+    box-shadow: 0px 0px 20px yellow;
+    transform: translate(0px, 0px)
+  }
+  60% {
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+  }
+  //Afternoon
+  75% {
+    background-color: lavender;
+
+  }
+  //Nighttime
+  100% {
+    background-color: white;
+    transform:
+      translate(50vw, 300px)
+      scale(3,3);
+  }
+}
+
+@-webkit-keyframes skylight {
+//Skylight, change of color of background sky
+//The 'vw' stands for view width, and refers to the percentage of the screen
+//to travel across.  This is good when dealing with mobile responsive units.
+0% {
+  background-color: pink;
+}
+//Noon
+25% {
+  background-color: lightblue;
+}
+//Noon
+40% {
+}
+50% {
+}
+60% {
+}
+//Afternoon
+75% {
+  background-color: orange;
+}
+//Nighttime
+100% {
+  background-color: purple;
+}
+}
+
+
+/* SCSS */
+.exampleClass {
+  //links the .class to an animation timeline
+  //MUST match the spelling of the timeline. 'myFirstAnimation'
+  animation-name: myFirstAnimation;
+  //This is the speed of the animation in seconds
+  animation-duration: 5s;
+  //How many times do you want to the animation to repeat? put 'infinite' for never ending repetitions
+  //or an number for a specific number of repetitions
+  animation-iteration-count: infinite;
+  //Animation direction describes the way that animation progresses on its timeline.
+  //normal goes from 0-100, then repeats from 0-100
+  //reverse goes from 100-0 then repeats
+  //alternate goes from 0-100 then 100-0
+  //alternate-reverse: 100-0 then 0-100
+  animation-direction: normal;
+  text-align: center;
+}
+@-webkit-keyframes myFirstAnimation {
+
+0% {
+  //rotate property transforms by rotation from 0% to 360%
+  //it flips across the page because it is in a single block
+  transform: rotate(0deg);
+  //translate transforms by moving on the x and y axis by pxs or %
+  transform: translate(50%,0px);
+  // scale transforms by scaling the object on the x and y axis
+  //Scale by units based on 1.
+  //ex. Half scale = .5
+  //no scale =1
+  //double size = 2
+  transform: scale(1,1);
+}
+
+50% {
+  transform: rotate(180deg);
+  transform: translate(0px,10px);
+}
+
+100% {
+transform: scale(2,2);
+transform: rotate(360deg);
+transform: translate(0px,20px);
+transform: scale(3,3);
+}
+}

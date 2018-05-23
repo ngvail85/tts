@@ -1,0 +1,112 @@
+/* line 1, /Users/ngvail/Documents/GitHub/tts/week-7/css-animation/style/sass/style.scss */
+body {
+  background: darkgreen;
+}
+
+/* line 5, /Users/ngvail/Documents/GitHub/tts/week-7/css-animation/style/sass/style.scss */
+.timeline, .sky, .sun {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+/* line 11, /Users/ngvail/Documents/GitHub/tts/week-7/css-animation/style/sass/style.scss */
+.sky {
+  height: 600px;
+  width: 100%;
+  background-color: skyblue;
+  padding-top: calc(300px - 25px);
+  overflow: hidden;
+  animation-name: skylight;
+}
+
+/* line 22, /Users/ngvail/Documents/GitHub/tts/week-7/css-animation/style/sass/style.scss */
+.sun {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: sunset;
+}
+
+@-webkit-keyframes sunset {
+  0% {
+    background-color: white;
+    transform: translate(-50vw, 300px) scale(3, 3);
+  }
+  25% {
+    background-color: pink;
+  }
+  40% {
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+  }
+  50% {
+    box-shadow: 0px 0px 20px yellow;
+    transform: translate(0px, 0px);
+  }
+  60% {
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+  }
+  75% {
+    background-color: lavender;
+  }
+  100% {
+    background-color: white;
+    transform: translate(50vw, 300px) scale(3, 3);
+  }
+}
+
+@-webkit-keyframes skylight {
+  0% {
+    background-color: pink;
+  }
+  25% {
+    background-color: lightblue;
+  }
+  40% {
+  }
+  50% {
+  }
+  60% {
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+/* SCSS */
+/* line 104, /Users/ngvail/Documents/GitHub/tts/week-7/css-animation/style/sass/style.scss */
+.exampleClass {
+  animation-name: myFirstAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  text-align: center;
+}
+
+@-webkit-keyframes myFirstAnimation {
+  0% {
+    transform: rotate(0deg);
+    transform: translate(50%, 0px);
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: rotate(180deg);
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: scale(2, 2);
+    transform: rotate(360deg);
+    transform: translate(0px, 20px);
+    transform: scale(3, 3);
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

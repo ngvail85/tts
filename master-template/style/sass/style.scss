@@ -28,6 +28,6 @@
 }
 
 //Adding the "^" operator Applies the border to anything that starts with the following terms
-  [class^="col"]{
+  [class^="col-"]{
     @extend .border;
   }
