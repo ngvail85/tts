@@ -5,8 +5,8 @@
 		"../sass/style.scss"
 	],
 	"sourcesContent": [
-		"body{\n  background: blue;\n}\n"
+		"body{\n  background: lightgray;\n}\n"
 	],
-	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACF,UAAU,EAAE,IAAK;CAClB",
+	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACF,UAAU,EAAE,SAAU;CACvB",
 	"names": []
 }
