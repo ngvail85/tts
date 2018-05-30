@@ -1,6 +1,6 @@
 # Tech Talent South
 
-## What is Markdown Language
+## Capstone Project Markdown
 
 ## SASS
 

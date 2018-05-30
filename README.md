@@ -36,3 +36,32 @@ col-xs - mobile phone
 col-sm - tablet portrait (768px)
 col-md - tablet landscape (992px) (can also sometimes work for laptops depending on the size)
 col-lg - (1200px)desktop screen size
+
+## bootstrap
+### Container-fluid > Container > Row > Columns
+``` HTML
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+</div>
+```
